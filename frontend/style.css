@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+/*END OF CSS RESET*/
+body{
+    background-color: #f2f2f2;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: #006837;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.card{
+    max-width: 520px;
+    background-color: #f9c582;
+
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #446774;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.question{
+    font-weight: 300;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+input{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 480px;
+    height: 64px;
+    color: #98a991;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-left: 20px;
+    
+}
+::placeholder{
+    color: #98a991;
+}
+button{
+    width: 120px;
+    height: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    background-color: #f9c582;
+    color: #006837;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+    .main{
+        width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .card{
+        width: 100%;
+    }
+    input{
+        width: calc(100% - 40px);
+    }
+  }
